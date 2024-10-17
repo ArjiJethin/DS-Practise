@@ -7,7 +7,7 @@ int front = -1, rear = -1;
 
 int isfull()
 {
-    return (front == MAX - 1);
+    return (rear == MAX - 1);
 }
 
 int isempty()
@@ -112,10 +112,14 @@ int main()
     printf("Front element is: %d\n", peek());
     printf("Size of the queue is: %d\n", size());
     enqueue(50);
-    display();
-    dequeue();
-    dequeue();
-    display();
+    // display();
+    // dequeue();
+    // dequeue();
+    // display();
+    if (isfull)
+    {
+        printf("Queue is Full");
+    }
 
     return 0;
 }
