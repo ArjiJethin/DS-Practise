@@ -35,12 +35,11 @@ int main()
         }
     }
 
-    for (int i = 0; i < 3; i++)
+    printf("%-8s %-8s %-8s\n", "Value", "Row", "Column");
+    for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < size; j++)
-        {
-            printf("%d\t", matrix[i][j]);
-        }
-        printf("\n");
+        printf("%-8d %-8d %-8d\n", matrix[0][i], matrix[1][i], matrix[2][i]);
     }
+
+    return 0;
 }
