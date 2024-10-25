@@ -34,7 +34,7 @@ void enqueue(int value)
 
     else
     {
-        if (front = -1)
+        if (front == -1)
         {
             front = 0;
         }
